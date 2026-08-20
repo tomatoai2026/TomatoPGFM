@@ -1,0 +1,73 @@
+{
+  "weights": {
+    "mlm": 1.0,
+    "vtp": 0.0,
+    "cpc": 0.0,
+    "masked_path": 0.25,
+    "graph_recon": 0.25
+  },
+  "active_tasks": [
+    "mlm",
+    "masked_path",
+    "graph_recon"
+  ],
+  "disabled_tasks": [
+    "vtp",
+    "cpc"
+  ],
+  "stages": [
+    {
+      "name": "p1_512",
+      "seq_len": 512,
+      "epochs": 4,
+      "shard": "data/shards/p1_512.jsonl",
+      "steps": 52684
+    },
+    {
+      "name": "p2_1024",
+      "seq_len": 1024,
+      "epochs": 5,
+      "shard": "data/shards/p2_1024.jsonl",
+      "steps": 32925
+    },
+    {
+      "name": "p3_2048",
+      "seq_len": 2048,
+      "epochs": 5,
+      "shard": "data/shards/p3_2048.jsonl",
+      "steps": 16460
+    },
+    {
+      "name": "p4_4096",
+      "seq_len": 4096,
+      "epochs": 6,
+      "shard": "data/shards/p4_4096.jsonl",
+      "steps": 9876
+    },
+    {
+      "name": "p5_8192",
+      "seq_len": 8192,
+      "epochs": 6,
+      "shard": "data/shards/p5_8192.jsonl",
+      "steps": 4938
+    }
+  ],
+  "total_steps": 116883,
+  "train_args": {
+    "peak_lr": 0.0003,
+    "min_lr": 1e-05,
+    "warmup_steps": 12000,
+    "total_steps": 116883,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "grad_accum": 4,
+    "precision": "bf16",
+    "mask_id": 1,
+    "graph_noise_std": 1.0,
+    "vtp_class_weights": null,
+    "graph_mode": "on"
+  },
+  "world": 4,
+  "per_rank_batch": 4,
+  "grad_accum": 4
+}

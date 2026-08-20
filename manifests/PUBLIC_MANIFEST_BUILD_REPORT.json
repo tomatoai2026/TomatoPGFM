@@ -1,0 +1,25 @@
+{
+  "training_panel": {
+    "rows": 66,
+    "source_counts": {
+      "Shi et al. (2026)": 19,
+      "Zhou et al. (2022)": 39,
+      "Li et al. (2023)": 8
+    },
+    "sha256": "4994330b14ef93dd838ed74eebbdc37b4e9ee6c9d9dc8108fdf4279c81afd8e7"
+  },
+  "external_genomes": {
+    "rows": 2,
+    "sha256": "ec3f3459294304f64597acdb4b7f88a8fc04d88252688fe7b004b045a1c7ad85"
+  },
+  "LA1974": {
+    "rows": 17228,
+    "sha256": "090fa613604c045ca02cacab1cbd8e0e8bc8f260cb321dcc37aa29c6efe48059",
+    "metadata": "manifests/LA1974_evaluation_windows_coordinates_only.metadata.json"
+  },
+  "MicroTom": {
+    "rows": 23504,
+    "sha256": "4086baa12cbdaab11f044c588e93baf70f10cf2bd6751b17059531503a7d39b2",
+    "metadata": "manifests/MicroTom_evaluation_windows_coordinates_only.metadata.json"
+  }
+}

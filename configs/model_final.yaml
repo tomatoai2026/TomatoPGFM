@@ -1,0 +1,21 @@
+model_name: TomatoPGFM
+vocab_size: 2085
+d_model: 768
+n_layers: 15
+n_heads: 12
+ff_mult: 4
+graph_feature_dim: 8
+max_seq_len: 8192
+attn_window: 256
+use_real_mamba: true
+mamba_d_state: 64
+mamba_d_conv: 4
+mamba_expand: 2
+mamba_headdim: 64
+use_moe: true
+moe_experts: 16
+moe_top_k: 2
+moe_aux_weight: 0.01
+expected_unique_parameters: 479195678
+expected_active_parameters_per_token: 148625438
+graph_modes: [on, shuffle, off]

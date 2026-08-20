@@ -1,0 +1,3 @@
+accession	split	source_collection	source_bioprojects	fa_name	gff_name	n_chr	total_bp	gene_count	feature_count	fa_size	gff_size	fa_sha256	gff_sha256	status
+LA1974	holdout	External evaluation assembly	PRJNA633104	LA1974.fa.gz	LA1974.gff3.gz	12	1232332150	36233	517638	340072909	5344621	b6a7fcdc09262b9a574c0bb483a878040242b6b3ffc45d69801a79d36f60be47	0993b906c2e43370a7507c7a9c0c9914aea4803796a70d4f5f72c4acb18dca30	PASS
+MicroTom	holdout	External evaluation assembly	GCF_036512215.1	MicroTom.fasta.gz	MicroTom.gff3.gz	12	832773323	39809	754547	254168196	11985365	9db7586e896d7ff27b27f070598cbc41ba2ec80bdaa70a1a579d77dbb76df930	d64779776943abe6b178b2b6ecfc0de62de0006dd027858e83a4d7641d2d4cae	PASS

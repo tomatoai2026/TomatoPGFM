@@ -1,0 +1,19 @@
+stages:
+  - {name: p1_512, seq_len: 512, epochs: 4, steps: 52684}
+  - {name: p2_1024, seq_len: 1024, epochs: 5, steps: 32925}
+  - {name: p3_2048, seq_len: 2048, epochs: 5, steps: 16460}
+  - {name: p4_4096, seq_len: 4096, epochs: 6, steps: 9876}
+  - {name: p5_8192, seq_len: 8192, epochs: 6, steps: 4938}
+optimizer: adamw
+peak_lr: 0.0003
+min_lr: 0.00001
+warmup_steps: 12000
+weight_decay: 0.01
+grad_clip: 1.0
+precision: bf16
+fixed_loss_weights:
+  mlm: 1.0
+  vtp: 0.0
+  cpc: 0.0
+  masked_path: 0.25
+  graph_recon: 0.25

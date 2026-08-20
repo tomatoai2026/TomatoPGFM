@@ -1,0 +1,108 @@
+{
+  "schema_version": "TomatoPGFM.coordinate_window_manifest.v1",
+  "genome": "MicroTom",
+  "coordinate_system": "0-based half-open [start,end)",
+  "row_order": "gene-center windows in source-pool order, followed by seeded intergenic selections in NumPy choice order",
+  "selection_seed": 1234,
+  "numpy_version_used_for_frozen_selection": "2.3.5",
+  "rows": 23504,
+  "gene_rows": 11752,
+  "intergenic_rows": 11752,
+  "logical_sources": {
+    "production_selector": "frozen selection procedure; public reconstruction entry point: scripts/build_genecds_dataset.py (source file not redistributed)",
+    "window_pool": "external evaluation window pool (not redistributed; source checksum retained)",
+    "annotation": "external evaluation annotation (not redistributed; source checksum retained)",
+    "prior_exact_manifest": "coordinate-selection source manifest (not redistributed; source checksum retained)"
+  },
+  "source_sha256": {
+    "production_selector": "03f6b8fe970194e135c5eeca4a706436fa9c8f627756f8bab7fc9fb784c35047",
+    "window_pool": "9a9ac768fa7bdc1fe1c47d11e79d859753934150aee602baf8669c154110084d",
+    "annotation": "d64779776943abe6b178b2b6ecfc0de62de0006dd027858e83a4d7641d2d4cae",
+    "prior_exact_manifest": "3036149f369afc488a067ec1c8c7f4ace18b29c9c1e7c85c12315e57d98fa450"
+  },
+  "selection_validation": {
+    "chr01": {
+      "pool_size": 3904,
+      "selected": 992,
+      "indices_sha256": "99cc1ae7aff8d173150f7002066c88767b3ab207836ddac499e2ac6b6204bd64",
+      "matches_frozen_hash": true
+    },
+    "chr02": {
+      "pool_size": 3181,
+      "selected": 1590,
+      "indices_sha256": "cc1e24e9510b02b1f5958f3fbd6f51107ae226ce8378b1f5feca10974f2b5ca1",
+      "matches_frozen_hash": true
+    },
+    "chr03": {
+      "pool_size": 3800,
+      "selected": 1076,
+      "indices_sha256": "a1aae0b7c668b7a9fdc3f392b1cee60a3e0026740386d46e7371a4294d866cfc",
+      "matches_frozen_hash": true
+    },
+    "chr04": {
+      "pool_size": 3939,
+      "selected": 973,
+      "indices_sha256": "e51d9d866330585588503d04d5ee5a0655f517a24bf29fff34fc3602c6c1c521",
+      "matches_frozen_hash": true
+    },
+    "chr05": {
+      "pool_size": 4075,
+      "selected": 842,
+      "indices_sha256": "ca4d8f1a5aae4f7786b5ff8bf2602d39bf6e0b737d966c2dcc8422364ef205e0",
+      "matches_frozen_hash": true
+    },
+    "chr06": {
+      "pool_size": 3760,
+      "selected": 1103,
+      "indices_sha256": "eeccab351da555b8d15e132f769548c759c88ff3e6310836ab1d47c6c0d055b3",
+      "matches_frozen_hash": true
+    },
+    "chr07": {
+      "pool_size": 4067,
+      "selected": 846,
+      "indices_sha256": "02945b85422b9bb6909fd2afea5b7b8bc40c2d603c597ca4bfa51872d861c4ff",
+      "matches_frozen_hash": true
+    },
+    "chr08": {
+      "pool_size": 4045,
+      "selected": 872,
+      "indices_sha256": "240451ae50f1880d959d5c77cc74303a38775dfce48752dbfefc19c0f835641c",
+      "matches_frozen_hash": true
+    },
+    "chr09": {
+      "pool_size": 4088,
+      "selected": 834,
+      "indices_sha256": "27f8b87c48ec6c7582168014a23546a26d0d749e2fbbdc59d03eab4a12c637ea",
+      "matches_frozen_hash": true
+    },
+    "chr10": {
+      "pool_size": 4099,
+      "selected": 805,
+      "indices_sha256": "b215cf96864faf01ad77729418ef91226842edd5371fadeeac3b5a74a67b5f39",
+      "matches_frozen_hash": true
+    },
+    "chr11": {
+      "pool_size": 3901,
+      "selected": 1002,
+      "indices_sha256": "a44c2cd5d50a93d8fc1a9d0084e0986230d13e3e21aec59817449196145f5cd7",
+      "matches_frozen_hash": true
+    },
+    "chr12": {
+      "pool_size": 4098,
+      "selected": 817,
+      "indices_sha256": "2590e152064dd2701345b42de66ddc105e7e610dee2c745403752c459985163c",
+      "matches_frozen_hash": true
+    }
+  },
+  "validation": {
+    "row_count_match": true,
+    "row_identity_and_order_match": true,
+    "all_selection_hashes_match": true,
+    "coordinate_bounds_valid": true
+  },
+  "manifest": "manifests/MicroTom_evaluation_windows_coordinates_only.jsonl.gz",
+  "manifest_sha256": "4086baa12cbdaab11f044c588e93baf70f10cf2bd6751b17059531503a7d39b2",
+  "sequence_field_distributed": false,
+  "sequence_verification": "SHA-256 per 512-bp window",
+  "materialization_script": "scripts/materialize_manifest_sequences.py"
+}
