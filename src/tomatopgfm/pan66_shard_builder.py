@@ -665,7 +665,7 @@ def build_pan66_shard(args: argparse.Namespace) -> dict[str, object]:
         "accession_proxy_token_counts_top50": dict(stats.accession_token_counts.most_common(50)),
         "window_source_counts": dict(stats.window_sources),
         "g7_path_level_status": "not_final_from_origin_proxy_builder_pilot",
-        "g8_backbone_coverage_status": "reported_not_thresholded_until_builder_pilot_audit",
+        "g8_backbone_coverage_status": "backbone_coverage_reported",
         "cpc_sample_weight_status": cpc_report.get("status"),
         "holdout_hits": stats.holdout_hits[:50],
         "max_token_id": stats.max_token_id,
