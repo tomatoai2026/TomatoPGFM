@@ -1,0 +1,743 @@
+{
+  "probe": "g5_stage_end_graph_probe",
+  "scope": "in_distribution_training_panel",
+  "scope_note": "The wild and cultivated strata are sampled from the 66-accession training panel; they are not external held-out genomes.",
+  "criteria_source": "g4_three_arm_gate.py (historical criterion applied to training-panel windows)",
+  "entries": [
+    {
+      "timestamp": "2026-06-29T17:42:17",
+      "checkpoint": {
+        "path": "runs/g5_clean_v1_20260627/ckpt/stage0_p1_512_end.pt",
+        "mtime": "2026-06-28T11:11:20",
+        "size": 5746312475,
+        "sha256_prefix": "dd8f6944570e30e1"
+      },
+      "stage": "p1_512",
+      "seq_len": 512,
+      "stage_idx": 0,
+      "global_step": 52684,
+      "training_panel": {
+        "wild_source_path": "external_input/g4_heldout_wild.jsonl",
+        "wild_sha256": "4f8068fa9201b74a5ac482771439d84b44db8e5d16e4d1b9a13f3dd6ab3386d9",
+        "cult_source_path": "external_input/g4_heldout_cult.jsonl",
+        "cult_sha256": "66a91b43a882949424717c63085b1c7f747bba443442f4f38178ad6afff43dc7",
+        "wild_count": 21750,
+        "cult_count": 3250,
+        "examples": 25000,
+        "eval_nbatch_per_arm": -1,
+        "eval_batch": 8
+      },
+      "intra_window_nonadjacency": {
+        "intra_window_nonadjacency": 0.926704433273089,
+        "edges_total": 65843,
+        "edges_abs_diff_gt1": 61017
+      },
+      "graph_on_loss": {
+        "wild": 4.2495,
+        "cult": 3.902
+      },
+      "graph_shuffle_loss": {
+        "wild": 4.2736,
+        "cult": 3.927
+      },
+      "graph_off_loss": {
+        "wild": 4.376,
+        "cult": 4.0436
+      },
+      "paired_delta_on_off": {
+        "wild": {
+          "mean": -0.12651,
+          "std": 0.04505,
+          "sem": 0.00086,
+          "sign_consistency_on_lt_off": 1.0
+        },
+        "cult": {
+          "mean": -0.14166,
+          "std": 0.04911,
+          "sem": 0.00244,
+          "sign_consistency_on_lt_off": 1.0
+        }
+      },
+      "paired_delta_on_shuffle": {
+        "wild": {
+          "mean": -0.02409,
+          "std": 0.01517,
+          "sem": 0.00029,
+          "sign_consistency_on_lt_shuffle": 0.9834
+        },
+        "cult": {
+          "mean": -0.02505,
+          "std": 0.01759,
+          "sem": 0.00087,
+          "sign_consistency_on_lt_shuffle": 0.968
+        }
+      },
+      "per_stratum": {
+        "wild_HEADLINE": {
+          "on": {
+            "mean": 4.2495,
+            "std": 0.7582,
+            "sem": 0.01454,
+            "n_batch": 2718
+          },
+          "shuffle": {
+            "mean": 4.2736,
+            "std": 0.757,
+            "sem": 0.01452,
+            "n_batch": 2718
+          },
+          "off": {
+            "mean": 4.376,
+            "std": 0.7467,
+            "sem": 0.01432,
+            "n_batch": 2718
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.12651,
+            "std": 0.04505,
+            "sem": 0.00086,
+            "sign_consistency_on_lt_off": 1.0
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.02409,
+            "std": 0.01517,
+            "sem": 0.00029,
+            "sign_consistency_on_lt_shuffle": 0.9834
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        },
+        "cult_corroboration": {
+          "on": {
+            "mean": 3.902,
+            "std": 0.7543,
+            "sem": 0.03743,
+            "n_batch": 406
+          },
+          "shuffle": {
+            "mean": 3.927,
+            "std": 0.7538,
+            "sem": 0.03741,
+            "n_batch": 406
+          },
+          "off": {
+            "mean": 4.0436,
+            "std": 0.7448,
+            "sem": 0.03696,
+            "n_batch": 406
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.14166,
+            "std": 0.04911,
+            "sem": 0.00244,
+            "sign_consistency_on_lt_off": 1.0
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.02505,
+            "std": 0.01759,
+            "sem": 0.00087,
+            "sign_consistency_on_lt_shuffle": 0.968
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        }
+      },
+      "decision": "PASS",
+      "probe_ok": true
+    },
+    {
+      "timestamp": "2026-06-29T17:55:43",
+      "checkpoint": {
+        "path": "runs/g5_clean_v1_20260627/ckpt/stage1_p2_1024_end.pt",
+        "mtime": "2026-06-28T22:23:26",
+        "size": 5746314884,
+        "sha256_prefix": "27f8dbb618dd054f"
+      },
+      "stage": "p2_1024",
+      "seq_len": 1024,
+      "stage_idx": 1,
+      "global_step": 85609,
+      "training_panel": {
+        "wild_source_path": "external_input/g4_heldout_wild.jsonl",
+        "wild_sha256": "4f8068fa9201b74a5ac482771439d84b44db8e5d16e4d1b9a13f3dd6ab3386d9",
+        "cult_source_path": "external_input/g4_heldout_cult.jsonl",
+        "cult_sha256": "66a91b43a882949424717c63085b1c7f747bba443442f4f38178ad6afff43dc7",
+        "wild_count": 21750,
+        "cult_count": 3250,
+        "examples": 25000,
+        "eval_nbatch_per_arm": -1,
+        "eval_batch": 8
+      },
+      "intra_window_nonadjacency": {
+        "intra_window_nonadjacency": 0.926704433273089,
+        "edges_total": 65843,
+        "edges_abs_diff_gt1": 61017
+      },
+      "graph_on_loss": {
+        "wild": 4.3313,
+        "cult": 4.0515
+      },
+      "graph_shuffle_loss": {
+        "wild": 4.349,
+        "cult": 4.0737
+      },
+      "graph_off_loss": {
+        "wild": 4.4585,
+        "cult": 4.2189
+      },
+      "paired_delta_on_off": {
+        "wild": {
+          "mean": -0.12719,
+          "std": 0.05796,
+          "sem": 0.00111,
+          "sign_consistency_on_lt_off": 0.9952
+        },
+        "cult": {
+          "mean": -0.16737,
+          "std": 0.07183,
+          "sem": 0.00356,
+          "sign_consistency_on_lt_off": 0.9975
+        }
+      },
+      "paired_delta_on_shuffle": {
+        "wild": {
+          "mean": -0.01771,
+          "std": 0.02385,
+          "sem": 0.00046,
+          "sign_consistency_on_lt_shuffle": 0.7719
+        },
+        "cult": {
+          "mean": -0.02222,
+          "std": 0.02697,
+          "sem": 0.00134,
+          "sign_consistency_on_lt_shuffle": 0.8005
+        }
+      },
+      "per_stratum": {
+        "wild_HEADLINE": {
+          "on": {
+            "mean": 4.3313,
+            "std": 0.7266,
+            "sem": 0.01394,
+            "n_batch": 2718
+          },
+          "shuffle": {
+            "mean": 4.349,
+            "std": 0.7236,
+            "sem": 0.01388,
+            "n_batch": 2718
+          },
+          "off": {
+            "mean": 4.4585,
+            "std": 0.709,
+            "sem": 0.0136,
+            "n_batch": 2718
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.12719,
+            "std": 0.05796,
+            "sem": 0.00111,
+            "sign_consistency_on_lt_off": 0.9952
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01771,
+            "std": 0.02385,
+            "sem": 0.00046,
+            "sign_consistency_on_lt_shuffle": 0.7719
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        },
+        "cult_corroboration": {
+          "on": {
+            "mean": 4.0515,
+            "std": 0.7215,
+            "sem": 0.03581,
+            "n_batch": 406
+          },
+          "shuffle": {
+            "mean": 4.0737,
+            "std": 0.7217,
+            "sem": 0.03582,
+            "n_batch": 406
+          },
+          "off": {
+            "mean": 4.2189,
+            "std": 0.7065,
+            "sem": 0.03506,
+            "n_batch": 406
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.16737,
+            "std": 0.07183,
+            "sem": 0.00356,
+            "sign_consistency_on_lt_off": 0.9975
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.02222,
+            "std": 0.02697,
+            "sem": 0.00134,
+            "sign_consistency_on_lt_shuffle": 0.8005
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        }
+      },
+      "decision": "PASS",
+      "probe_ok": true
+    },
+    {
+      "timestamp": "2026-06-29T18:09:04",
+      "checkpoint": {
+        "path": "runs/g5_clean_v1_20260627/ckpt/stage2_p3_2048_end.pt",
+        "mtime": "2026-06-29T04:34:00",
+        "size": 5746314884,
+        "sha256_prefix": "d15711c002f2e594"
+      },
+      "stage": "p3_2048",
+      "seq_len": 2048,
+      "stage_idx": 2,
+      "global_step": 102069,
+      "training_panel": {
+        "wild_source_path": "external_input/g4_heldout_wild.jsonl",
+        "wild_sha256": "4f8068fa9201b74a5ac482771439d84b44db8e5d16e4d1b9a13f3dd6ab3386d9",
+        "cult_source_path": "external_input/g4_heldout_cult.jsonl",
+        "cult_sha256": "66a91b43a882949424717c63085b1c7f747bba443442f4f38178ad6afff43dc7",
+        "wild_count": 21750,
+        "cult_count": 3250,
+        "examples": 25000,
+        "eval_nbatch_per_arm": -1,
+        "eval_batch": 8
+      },
+      "intra_window_nonadjacency": {
+        "intra_window_nonadjacency": 0.926704433273089,
+        "edges_total": 65843,
+        "edges_abs_diff_gt1": 61017
+      },
+      "graph_on_loss": {
+        "wild": 4.1001,
+        "cult": 3.8102
+      },
+      "graph_shuffle_loss": {
+        "wild": 4.1167,
+        "cult": 3.8298
+      },
+      "graph_off_loss": {
+        "wild": 4.1981,
+        "cult": 3.9351
+      },
+      "paired_delta_on_off": {
+        "wild": {
+          "mean": -0.09802,
+          "std": 0.0462,
+          "sem": 0.00089,
+          "sign_consistency_on_lt_off": 0.9963
+        },
+        "cult": {
+          "mean": -0.12492,
+          "std": 0.05422,
+          "sem": 0.00269,
+          "sign_consistency_on_lt_off": 1.0
+        }
+      },
+      "paired_delta_on_shuffle": {
+        "wild": {
+          "mean": -0.01664,
+          "std": 0.01976,
+          "sem": 0.00038,
+          "sign_consistency_on_lt_shuffle": 0.8271
+        },
+        "cult": {
+          "mean": -0.01964,
+          "std": 0.02159,
+          "sem": 0.00107,
+          "sign_consistency_on_lt_shuffle": 0.8547
+        }
+      },
+      "per_stratum": {
+        "wild_HEADLINE": {
+          "on": {
+            "mean": 4.1001,
+            "std": 0.7321,
+            "sem": 0.01404,
+            "n_batch": 2718
+          },
+          "shuffle": {
+            "mean": 4.1167,
+            "std": 0.7306,
+            "sem": 0.01401,
+            "n_batch": 2718
+          },
+          "off": {
+            "mean": 4.1981,
+            "std": 0.7213,
+            "sem": 0.01384,
+            "n_batch": 2718
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.09802,
+            "std": 0.0462,
+            "sem": 0.00089,
+            "sign_consistency_on_lt_off": 0.9963
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01664,
+            "std": 0.01976,
+            "sem": 0.00038,
+            "sign_consistency_on_lt_shuffle": 0.8271
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        },
+        "cult_corroboration": {
+          "on": {
+            "mean": 3.8102,
+            "std": 0.7237,
+            "sem": 0.03592,
+            "n_batch": 406
+          },
+          "shuffle": {
+            "mean": 3.8298,
+            "std": 0.7246,
+            "sem": 0.03596,
+            "n_batch": 406
+          },
+          "off": {
+            "mean": 3.9351,
+            "std": 0.7143,
+            "sem": 0.03545,
+            "n_batch": 406
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.12492,
+            "std": 0.05422,
+            "sem": 0.00269,
+            "sign_consistency_on_lt_off": 1.0
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01964,
+            "std": 0.02159,
+            "sem": 0.00107,
+            "sign_consistency_on_lt_shuffle": 0.8547
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        }
+      },
+      "decision": "PASS",
+      "probe_ok": true
+    },
+    {
+      "timestamp": "2026-06-29T18:22:25",
+      "checkpoint": {
+        "path": "runs/g5_clean_v1_20260627/ckpt/stage3_p4_4096_end.pt",
+        "mtime": "2026-06-29T10:04:01",
+        "size": 5746314884,
+        "sha256_prefix": "ca53f13c4ed00d21"
+      },
+      "stage": "p4_4096",
+      "seq_len": 4096,
+      "stage_idx": 3,
+      "global_step": 111945,
+      "training_panel": {
+        "wild_source_path": "external_input/g4_heldout_wild.jsonl",
+        "wild_sha256": "4f8068fa9201b74a5ac482771439d84b44db8e5d16e4d1b9a13f3dd6ab3386d9",
+        "cult_source_path": "external_input/g4_heldout_cult.jsonl",
+        "cult_sha256": "66a91b43a882949424717c63085b1c7f747bba443442f4f38178ad6afff43dc7",
+        "wild_count": 21750,
+        "cult_count": 3250,
+        "examples": 25000,
+        "eval_nbatch_per_arm": -1,
+        "eval_batch": 8
+      },
+      "intra_window_nonadjacency": {
+        "intra_window_nonadjacency": 0.926704433273089,
+        "edges_total": 65843,
+        "edges_abs_diff_gt1": 61017
+      },
+      "graph_on_loss": {
+        "wild": 3.9872,
+        "cult": 3.6898
+      },
+      "graph_shuffle_loss": {
+        "wild": 4.0046,
+        "cult": 3.7082
+      },
+      "graph_off_loss": {
+        "wild": 4.0712,
+        "cult": 3.7911
+      },
+      "paired_delta_on_off": {
+        "wild": {
+          "mean": -0.08403,
+          "std": 0.03632,
+          "sem": 0.0007,
+          "sign_consistency_on_lt_off": 0.9993
+        },
+        "cult": {
+          "mean": -0.10126,
+          "std": 0.04064,
+          "sem": 0.00202,
+          "sign_consistency_on_lt_off": 1.0
+        }
+      },
+      "paired_delta_on_shuffle": {
+        "wild": {
+          "mean": -0.01737,
+          "std": 0.01511,
+          "sem": 0.00029,
+          "sign_consistency_on_lt_shuffle": 0.897
+        },
+        "cult": {
+          "mean": -0.01837,
+          "std": 0.01611,
+          "sem": 0.0008,
+          "sign_consistency_on_lt_shuffle": 0.8941
+        }
+      },
+      "per_stratum": {
+        "wild_HEADLINE": {
+          "on": {
+            "mean": 3.9872,
+            "std": 0.7338,
+            "sem": 0.01408,
+            "n_batch": 2718
+          },
+          "shuffle": {
+            "mean": 4.0046,
+            "std": 0.733,
+            "sem": 0.01406,
+            "n_batch": 2718
+          },
+          "off": {
+            "mean": 4.0712,
+            "std": 0.7265,
+            "sem": 0.01393,
+            "n_batch": 2718
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.08403,
+            "std": 0.03632,
+            "sem": 0.0007,
+            "sign_consistency_on_lt_off": 0.9993
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01737,
+            "std": 0.01511,
+            "sem": 0.00029,
+            "sign_consistency_on_lt_shuffle": 0.897
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        },
+        "cult_corroboration": {
+          "on": {
+            "mean": 3.6898,
+            "std": 0.7257,
+            "sem": 0.03601,
+            "n_batch": 406
+          },
+          "shuffle": {
+            "mean": 3.7082,
+            "std": 0.726,
+            "sem": 0.03603,
+            "n_batch": 406
+          },
+          "off": {
+            "mean": 3.7911,
+            "std": 0.7195,
+            "sem": 0.03571,
+            "n_batch": 406
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.10126,
+            "std": 0.04064,
+            "sem": 0.00202,
+            "sign_consistency_on_lt_off": 1.0
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01837,
+            "std": 0.01611,
+            "sem": 0.0008,
+            "sign_consistency_on_lt_shuffle": 0.8941
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        }
+      },
+      "decision": "PASS",
+      "probe_ok": true
+    },
+    {
+      "timestamp": "2026-06-29T18:35:42",
+      "checkpoint": {
+        "path": "runs/g5_clean_v1_20260627/ckpt/stage4_p5_8192_end.pt",
+        "mtime": "2026-06-29T15:27:44",
+        "size": 5746314884,
+        "sha256_prefix": "4fa42ae45be03889"
+      },
+      "stage": "p5_8192",
+      "seq_len": 8192,
+      "stage_idx": 4,
+      "global_step": 116883,
+      "training_panel": {
+        "wild_source_path": "external_input/g4_heldout_wild.jsonl",
+        "wild_sha256": "4f8068fa9201b74a5ac482771439d84b44db8e5d16e4d1b9a13f3dd6ab3386d9",
+        "cult_source_path": "external_input/g4_heldout_cult.jsonl",
+        "cult_sha256": "66a91b43a882949424717c63085b1c7f747bba443442f4f38178ad6afff43dc7",
+        "wild_count": 21750,
+        "cult_count": 3250,
+        "examples": 25000,
+        "eval_nbatch_per_arm": -1,
+        "eval_batch": 8
+      },
+      "intra_window_nonadjacency": {
+        "intra_window_nonadjacency": 0.926704433273089,
+        "edges_total": 65843,
+        "edges_abs_diff_gt1": 61017
+      },
+      "graph_on_loss": {
+        "wild": 3.9605,
+        "cult": 3.6633
+      },
+      "graph_shuffle_loss": {
+        "wild": 3.9788,
+        "cult": 3.6823
+      },
+      "graph_off_loss": {
+        "wild": 4.0438,
+        "cult": 3.761
+      },
+      "paired_delta_on_off": {
+        "wild": {
+          "mean": -0.08328,
+          "std": 0.03479,
+          "sem": 0.00067,
+          "sign_consistency_on_lt_off": 0.9993
+        },
+        "cult": {
+          "mean": -0.09765,
+          "std": 0.03686,
+          "sem": 0.00183,
+          "sign_consistency_on_lt_off": 1.0
+        }
+      },
+      "paired_delta_on_shuffle": {
+        "wild": {
+          "mean": -0.01826,
+          "std": 0.015,
+          "sem": 0.00029,
+          "sign_consistency_on_lt_shuffle": 0.926
+        },
+        "cult": {
+          "mean": -0.01903,
+          "std": 0.01598,
+          "sem": 0.00079,
+          "sign_consistency_on_lt_shuffle": 0.9163
+        }
+      },
+      "per_stratum": {
+        "wild_HEADLINE": {
+          "on": {
+            "mean": 3.9605,
+            "std": 0.7342,
+            "sem": 0.01408,
+            "n_batch": 2718
+          },
+          "shuffle": {
+            "mean": 3.9788,
+            "std": 0.7335,
+            "sem": 0.01407,
+            "n_batch": 2718
+          },
+          "off": {
+            "mean": 4.0438,
+            "std": 0.7274,
+            "sem": 0.01395,
+            "n_batch": 2718
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.08328,
+            "std": 0.03479,
+            "sem": 0.00067,
+            "sign_consistency_on_lt_off": 0.9993
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01826,
+            "std": 0.015,
+            "sem": 0.00029,
+            "sign_consistency_on_lt_shuffle": 0.926
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        },
+        "cult_corroboration": {
+          "on": {
+            "mean": 3.6633,
+            "std": 0.7266,
+            "sem": 0.03606,
+            "n_batch": 406
+          },
+          "shuffle": {
+            "mean": 3.6823,
+            "std": 0.7263,
+            "sem": 0.03605,
+            "n_batch": 406
+          },
+          "off": {
+            "mean": 3.761,
+            "std": 0.7213,
+            "sem": 0.0358,
+            "n_batch": 406
+          },
+          "paired_delta_on_minus_off": {
+            "mean": -0.09765,
+            "std": 0.03686,
+            "sem": 0.00183,
+            "sign_consistency_on_lt_off": 1.0
+          },
+          "paired_delta_on_minus_shuffle": {
+            "mean": -0.01903,
+            "std": 0.01598,
+            "sem": 0.00079,
+            "sign_consistency_on_lt_shuffle": 0.9163
+          },
+          "verdict": {
+            "verdict": "PASS",
+            "paired_significant": true,
+            "sign_consistent": true
+          }
+        }
+      },
+      "decision": "PASS",
+      "probe_ok": true
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "batch": 16,
+    "n_batch": 10,
+    "n_warmup": 3,
+    "lat_n": 30,
+    "device": "cuda",
+    "dtype": "fp32",
+    "mask_bp": 12,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "condition_labels": {
+      "tomatopgfm_graph_on": "zero-feature adapter-on (all-zero graph features; edge_index=null; GraphMessage not executed)",
+      "tomatopgfm_graph_off": "graph-off"
+    }
+  },
+  "models": {
+    "tomatopgfm_graph_on": {
+      "params_total": 479195678,
+      "params_trainable": 479195678,
+      "by_seqlen": {
+        "512": {
+          "seq_per_s": 78.14,
+          "tok_per_s": 40008.9,
+          "peak_mem_mb": 2370.1,
+          "lat_p50_ms": 67.8,
+          "lat_p90_ms": 68.4,
+          "tokens_per_seq": 512,
+          "n_seq_timed": 160,
+          "wall_s": 2.048
+        },
+        "1024": {
+          "seq_per_s": 44.4,
+          "tok_per_s": 45469.9,
+          "peak_mem_mb": 2612.3,
+          "lat_p50_ms": 76.19,
+          "lat_p90_ms": 76.9,
+          "tokens_per_seq": 1024,
+          "n_seq_timed": 160,
+          "wall_s": 3.603
+        },
+        "2048": {
+          "seq_per_s": 23.05,
+          "tok_per_s": 47214.9,
+          "peak_mem_mb": 3389.9,
+          "lat_p50_ms": 93.16,
+          "lat_p90_ms": 93.59,
+          "tokens_per_seq": 2048,
+          "n_seq_timed": 160,
+          "wall_s": 6.94
+        }
+      }
+    },
+    "tomatopgfm_graph_off": {
+      "params_total": 479195678,
+      "params_trainable": 479195678,
+      "by_seqlen": {
+        "512": {
+          "seq_per_s": 78.41,
+          "tok_per_s": 40147.3,
+          "peak_mem_mb": 2226.1,
+          "lat_p50_ms": 68.18,
+          "lat_p90_ms": 68.81,
+          "tokens_per_seq": 512,
+          "n_seq_timed": 160,
+          "wall_s": 2.04
+        },
+        "1024": {
+          "seq_per_s": 44.56,
+          "tok_per_s": 45634.5,
+          "peak_mem_mb": 2612.3,
+          "lat_p50_ms": 75.9,
+          "lat_p90_ms": 76.44,
+          "tokens_per_seq": 1024,
+          "n_seq_timed": 160,
+          "wall_s": 3.59
+        },
+        "2048": {
+          "seq_per_s": 23.16,
+          "tok_per_s": 47435.4,
+          "peak_mem_mb": 3389.9,
+          "lat_p50_ms": 92.12,
+          "lat_p90_ms": 92.63,
+          "tokens_per_seq": 2048,
+          "n_seq_timed": 160,
+          "wall_s": 6.908
+        }
+      }
+    },
+    "dnabert2": {
+      "params_total": 117068544,
+      "params_trainable": 117068544,
+      "by_seqlen": {
+        "512": {
+          "seq_per_s": 448.94,
+          "tok_per_s": 53873.2,
+          "peak_mem_mb": 591.7,
+          "lat_p50_ms": 9.06,
+          "lat_p90_ms": 9.31,
+          "tokens_per_seq": 120,
+          "n_seq_timed": 160,
+          "wall_s": 0.356
+        },
+        "1024": {
+          "seq_per_s": 251.76,
+          "tok_per_s": 58156.5,
+          "peak_mem_mb": 718.2,
+          "lat_p50_ms": 9.54,
+          "lat_p90_ms": 9.82,
+          "tokens_per_seq": 231,
+          "n_seq_timed": 160,
+          "wall_s": 0.636
+        },
+        "2048": {
+          "seq_per_s": 127.2,
+          "tok_per_s": 56985.3,
+          "peak_mem_mb": 1027.1,
+          "lat_p50_ms": 13.87,
+          "lat_p90_ms": 13.99,
+          "tokens_per_seq": 448,
+          "n_seq_timed": 160,
+          "wall_s": 1.258
+        }
+      }
+    },
+    "plantmamba": {
+      "params_total": 96664320,
+      "params_trainable": 96664320,
+      "by_seqlen": {
+        "512": {
+          "seq_per_s": 550.3,
+          "tok_per_s": 55580.6,
+          "peak_mem_mb": 476.2,
+          "lat_p50_ms": 11.56,
+          "lat_p90_ms": 11.76,
+          "tokens_per_seq": 101,
+          "n_seq_timed": 160,
+          "wall_s": 0.291
+        },
+        "1024": {
+          "seq_per_s": 299.66,
+          "tok_per_s": 59033.5,
+          "peak_mem_mb": 572.0,
+          "lat_p50_ms": 11.87,
+          "lat_p90_ms": 12.03,
+          "tokens_per_seq": 197,
+          "n_seq_timed": 160,
+          "wall_s": 0.534
+        },
+        "2048": {
+          "seq_per_s": 159.82,
+          "tok_per_s": 62488.8,
+          "peak_mem_mb": 748.5,
+          "lat_p50_ms": 11.99,
+          "lat_p90_ms": 12.1,
+          "tokens_per_seq": 391,
+          "n_seq_timed": 160,
+          "wall_s": 1.001
+        }
+      }
+    }
+  }
+}

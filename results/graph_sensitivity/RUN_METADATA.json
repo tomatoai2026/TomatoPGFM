@@ -1,0 +1,9 @@
+{
+  "analysis": "paired graph-input sensitivity bootstrap",
+  "random_seed": 1234,
+  "bootstrap_resamples": 1000,
+  "alpha": 0.05,
+  "multiple_testing": "Benjamini-Hochberg false-discovery-rate adjustment",
+  "paired_input_directory": "results/graph_sensitivity/per_batch",
+  "script": "scripts/graph_sensitivity_bootstrap.py"
+}

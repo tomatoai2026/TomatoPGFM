@@ -1,0 +1,57 @@
+{
+  "genome": "MicroTom",
+  "task": "cds",
+  "n_total": 5244,
+  "n_pos": 2622,
+  "n_test": 885,
+  "hparams": {
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lr": 0.0002,
+    "head_lr": 0.001,
+    "max_epochs": 15,
+    "patience": 3,
+    "batch": 32,
+    "test_chroms": [
+      "chr03",
+      "chr05"
+    ],
+    "TomatoPGFM_graph_mode": "off"
+  },
+  "results": {
+    "TomatoPGFM": {
+      "auroc": 0.9596166624073601,
+      "auprc": 0.9606470740217851,
+      "bacc": 0.8825198057756197,
+      "mcc": 0.7648754340870182,
+      "best_val_auroc": 0.9619130287504764,
+      "n_train": 3924,
+      "n_val": 435,
+      "n_test": 885,
+      "trainable_params": 1193218
+    },
+    "dnabert2": {
+      "auroc": 0.9565959621773577,
+      "auprc": 0.9571910330294753,
+      "bacc": 0.8884104267825198,
+      "mcc": 0.7791660627426725,
+      "best_val_auroc": 0.9629927594529364,
+      "n_train": 3924,
+      "n_val": 435,
+      "n_test": 885,
+      "trainable_params": 456194
+    },
+    "plantmamba": {
+      "auroc": 0.9736979299769998,
+      "auprc": 0.9739890493379411,
+      "bacc": 0.9131484794275492,
+      "mcc": 0.8260310167225932,
+      "best_val_auroc": 0.9835076427996783,
+      "n_train": 3924,
+      "n_val": 435,
+      "n_test": 885,
+      "trainable_params": 1353218
+    }
+  },
+  "elapsed_sec": 1512.5
+}

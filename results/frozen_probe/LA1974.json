@@ -1,0 +1,198 @@
+{
+  "genome": "LA1974",
+  "scope": "full",
+  "seed": 1234,
+  "bootstrap_resamples": 1000,
+  "input_npz": "external_input/LA1974_512.npz",
+  "row_source": "manifests/LA1974_stage5_exact_coordinates.jsonl.gz",
+  "baseline_keys": {
+    "DNABERT_2": "dnabert2",
+    "PlantDNAMamba": "plantmamba"
+  },
+  "selected_rows": 17228,
+  "nonpad_token_lengths": {
+    "minimum": 87,
+    "maximum": 87,
+    "unique": [
+      87
+    ]
+  },
+  "test_chromosomes": [
+    "chr03",
+    "chr05"
+  ],
+  "C_grid": [
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "pooling": {
+    "historical": "mean over 512 model positions",
+    "primary": "mean over non-padding positions, including special tokens",
+    "sensitivity": "direct no-padding input using the same non-padding token IDs"
+  },
+  "tasks": {
+    "gene_vs_intergenic": {
+      "models": {
+        "TomatoPGFM_unmasked": {
+          "best_C": 0.003,
+          "inner_cv_auroc": 0.867794997493527,
+          "auroc": 0.8614986710969315,
+          "auroc_ci95": [
+            0.8486862091254282,
+            0.8745219432143052
+          ],
+          "auprc": 0.8603931253800039,
+          "balanced_accuracy": 0.7865205843293492,
+          "mcc": 0.5735756590275961,
+          "f1": 0.7910302242443938,
+          "n_train": 14216,
+          "n_test": 3012
+        },
+        "TomatoPGFM_masked": {
+          "best_C": 0.003,
+          "inner_cv_auroc": 0.8688881139292409,
+          "auroc": 0.8638200628208723,
+          "auroc_ci95": [
+            0.8512625791654101,
+            0.8760089235796963
+          ],
+          "auprc": 0.8619745857684391,
+          "balanced_accuracy": 0.7911686586985391,
+          "mcc": 0.5829855577679224,
+          "f1": 0.7959779435614661,
+          "n_train": 14216,
+          "n_test": 3012
+        },
+        "TomatoPGFM_nopad": {
+          "best_C": 0.003,
+          "inner_cv_auroc": 0.8695550740078583,
+          "auroc": 0.8682194638885802,
+          "auroc_ci95": [
+            0.8557264743593135,
+            0.8801588025939624
+          ],
+          "auprc": 0.872682130276172,
+          "balanced_accuracy": 0.7915006640106241,
+          "mcc": 0.5835284829622214,
+          "f1": 0.7958387516254877,
+          "n_train": 14216,
+          "n_test": 3012
+        },
+        "DNABERT_2": {
+          "best_C": 0.001,
+          "inner_cv_auroc": 0.818386024706292,
+          "auroc": 0.8166713403138223,
+          "auroc_ci95": [
+            0.802119774553843,
+            0.8309603771721435
+          ],
+          "auprc": 0.8247050551605932,
+          "balanced_accuracy": 0.7357237715803453,
+          "mcc": 0.47168718737709664,
+          "f1": 0.7398692810457517,
+          "n_train": 14216,
+          "n_test": 3012
+        },
+        "PlantDNAMamba": {
+          "best_C": 0.003,
+          "inner_cv_auroc": 0.8824274016631289,
+          "auroc": 0.8814106125299598,
+          "auroc_ci95": [
+            0.8696348514750206,
+            0.8931123998913598
+          ],
+          "auprc": 0.8928818974519865,
+          "balanced_accuracy": 0.8014608233731739,
+          "mcc": 0.6030115188131361,
+          "f1": 0.8031599736668861,
+          "n_train": 14216,
+          "n_test": 3012
+        }
+      }
+    },
+    "cds_vs_intergenic": {
+      "models": {
+        "TomatoPGFM_unmasked": {
+          "best_C": 0.01,
+          "inner_cv_auroc": 0.9529264455397973,
+          "auroc": 0.9536319968630527,
+          "auroc_ci95": [
+            0.939276327075777,
+            0.9666592123321242
+          ],
+          "auprc": 0.9444709772548218,
+          "balanced_accuracy": 0.8985148514851485,
+          "mcc": 0.7970687720962227,
+          "f1": 0.8990147783251231,
+          "n_train": 3652,
+          "n_test": 808
+        },
+        "TomatoPGFM_masked": {
+          "best_C": 0.01,
+          "inner_cv_auroc": 0.9541130892838044,
+          "auroc": 0.959189050093128,
+          "auroc_ci95": [
+            0.9473185839623567,
+            0.9709910486716988
+          ],
+          "auprc": 0.9523412262232895,
+          "balanced_accuracy": 0.9108910891089109,
+          "mcc": 0.8222760468300951,
+          "f1": 0.9124087591240876,
+          "n_train": 3652,
+          "n_test": 808
+        },
+        "TomatoPGFM_nopad": {
+          "best_C": 0.003,
+          "inner_cv_auroc": 0.9536733113950534,
+          "auroc": 0.9610516125870012,
+          "auroc_ci95": [
+            0.9493085849426528,
+            0.9721477980099992
+          ],
+          "auprc": 0.9569890519406288,
+          "balanced_accuracy": 0.9071782178217822,
+          "mcc": 0.8161812014980225,
+          "f1": 0.9101796407185628,
+          "n_train": 3652,
+          "n_test": 808
+        },
+        "DNABERT_2": {
+          "best_C": 0.003,
+          "inner_cv_auroc": 0.9036633839307325,
+          "auroc": 0.9128578080580334,
+          "auroc_ci95": [
+            0.8941292520341144,
+            0.9314171098421724
+          ],
+          "auprc": 0.9041135454878713,
+          "balanced_accuracy": 0.8415841584158417,
+          "mcc": 0.6858968912705068,
+          "f1": 0.8483412322274881,
+          "n_train": 3652,
+          "n_test": 808
+        },
+        "PlantDNAMamba": {
+          "best_C": 0.01,
+          "inner_cv_auroc": 0.9677598685481801,
+          "auroc": 0.9730602391922362,
+          "auroc_ci95": [
+            0.9626499546613078,
+            0.9823006016567003
+          ],
+          "auprc": 0.9717792530357373,
+          "balanced_accuracy": 0.9282178217821782,
+          "mcc": 0.8568136959550414,
+          "f1": 0.9292682926829269,
+          "n_train": 3652,
+          "n_test": 808
+        }
+      }
+    }
+  }
+}
