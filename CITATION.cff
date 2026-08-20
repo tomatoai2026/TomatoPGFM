@@ -4,6 +4,7 @@ title: "TomatoPGFM"
 type: software
 version: 0.1.0
 date-released: 2026-08-20
+doi: 10.5281/zenodo.22035724
 repository-code: https://github.com/tomatoai2026/TomatoPGFM
 license: Apache-2.0
 authors:
