@@ -623,7 +623,7 @@ def build_pan66_shard(args: argparse.Namespace) -> dict[str, object]:
     )
 
     manifest = {
-        "decision": "PAN66_PILOT_SHARD_BUILT_NOT_FULL_PASS" if pilot_mode else "PAN66_FULL_SHARD_BUILT_PENDING_C13_AUDIT",
+        "decision": "PAN66_PILOT_SHARD_BUILT" if pilot_mode else "PAN66_FULL_SHARD_BUILT",
         "pilot_mode": pilot_mode,
         "shard_path": str(out),
         "preflight_path": str(preflight_path),
