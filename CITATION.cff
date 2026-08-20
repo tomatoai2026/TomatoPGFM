@@ -7,6 +7,16 @@ date-released: 2026-08-20
 doi: 10.5281/zenodo.22035724
 repository-code: https://github.com/tomatoai2026/TomatoPGFM
 license: Apache-2.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22035723
+    description: Concept DOI for all TomatoPGFM software versions
+  - type: doi
+    value: 10.5281/zenodo.22032734
+    description: Version DOI for the TomatoPGFM model weights
+  - type: doi
+    value: 10.5281/zenodo.22033079
+    description: Version DOI for processed evaluation resources
 authors:
   - family-names: Han
     given-names: Jinlei
