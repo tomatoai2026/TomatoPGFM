@@ -1,0 +1,63 @@
+{
+  "title": "TomatoPGFM source code, version v0.1.0",
+  "upload_type": "software",
+  "description": "Versioned source code, configuration, evaluation scripts, external-evaluation coordinate manifests and lightweight result files for TomatoPGFM, a graph-conditioned genomic foundation model for tomato pangenomes.",
+  "creators": [
+    {
+      "name": "Han, Jinlei",
+      "affiliation": "Key Laboratory of Genome Research and Genetic Improvement of Xinjiang Characteristic Fruits and Vegetables, Institute of Fruits and Vegetables, Xinjiang Academy of Agricultural Sciences, Urumqi 830000, China"
+    },
+    {
+      "name": "Yushan, Tuerhong",
+      "affiliation": "Key Laboratory of Genome Research and Genetic Improvement of Xinjiang Characteristic Fruits and Vegetables, Institute of Fruits and Vegetables, Xinjiang Academy of Agricultural Sciences, Urumqi 830000, China",
+      "orcid": "0009-0005-0931-4094"
+    },
+    {
+      "name": "Wang, Baike",
+      "affiliation": "Key Laboratory of Genome Research and Genetic Improvement of Xinjiang Characteristic Fruits and Vegetables, Institute of Fruits and Vegetables, Xinjiang Academy of Agricultural Sciences, Urumqi 830000, China"
+    },
+    {
+      "name": "Wang, Juan",
+      "affiliation": "Key Laboratory of Genome Research and Genetic Improvement of Xinjiang Characteristic Fruits and Vegetables, Institute of Fruits and Vegetables, Xinjiang Academy of Agricultural Sciences, Urumqi 830000, China"
+    },
+    {
+      "name": "Yang, Haitao",
+      "affiliation": "Key Laboratory of Genome Research and Genetic Improvement of Xinjiang Characteristic Fruits and Vegetables, Institute of Fruits and Vegetables, Xinjiang Academy of Agricultural Sciences, Urumqi 830000, China"
+    },
+    {
+      "name": "Zhang, Changwei",
+      "affiliation": "National Key Laboratory of Crop Genetics and Germplasm Enhancement and Utilization, Nanjing Agricultural University, Nanjing 210095, China",
+      "orcid": "0000-0001-6426-7060"
+    },
+    {
+      "name": "Yu, Qinghui",
+      "affiliation": "Key Laboratory of Genome Research and Genetic Improvement of Xinjiang Characteristic Fruits and Vegetables, Institute of Fruits and Vegetables, Xinjiang Academy of Agricultural Sciences, Urumqi 830000, China",
+      "orcid": "0000-0002-9342-5301"
+    }
+  ],
+  "publication_date": "2026-08-21",
+  "version": "v0.1.0",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "TomatoPGFM",
+    "genomic foundation model",
+    "tomato pangenome",
+    "graph representation learning",
+    "Mamba2",
+    "mixture of experts"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22032734",
+      "relation": "isSupplementedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22033079",
+      "relation": "isSupplementedBy",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "The optimizer-bearing training-resume checkpoint is not distributed."
+}
